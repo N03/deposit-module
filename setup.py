@@ -203,25 +203,8 @@ setup(
         'invenio_base.api_blueprints': [
             'deposit = deposit.views_rest:blueprint',
         ],
-        'invenio_base.api_converters': [
-            'file_key = deposit.utils:FileKeyConverter',
-        ],
-        'invenio_pidstore.minters': [
-            'deposit_minter '
-            '= deposit.minters:deposit_minter',
-        ],
-        'invenio_pidstore.fetchers': [
-            'deposit_fetcher '
-            '= deposit.fetchers:deposit_fetcher',
-        ],
-        'invenio_assets.bundles': [
-            'deposit_js = deposit.bundles:js_deposit',
-        ],
         'invenio_jsonschemas.schemas': [
             'deposit = deposit.jsonschemas',
-        ],
-        'invenio_search.mappings': [
-            'deposits = deposit.mappings',
         ]
     },
     extras_require=extras_require,
