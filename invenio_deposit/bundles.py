@@ -110,6 +110,7 @@ js_dependecies_autocomplete = NpmBundle(
 
 js_main = NpmBundle(
     'node_modules/angular/angular.js',
+    'node_modules/angular-route/angular-route.js',
     'node_modules/angular-sanitize/angular-sanitize.js',
     'node_modules/underscore/underscore.js',
     npm={
