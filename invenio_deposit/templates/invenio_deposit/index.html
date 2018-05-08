@@ -35,13 +35,6 @@
 
 {%- block body_inner %}
 <div id="invenio-search">
-  <h2>test template</h2>
-  <div class="col-md-8">
-    <invenio-search-bar
-    template="template_test.html"
-    placeholder="{{ _('test de truc...') }}">
-    </invenio-search-bar>
-  </div>
   <invenio-search
    search-endpoint="{{ config.DEPOSIT_SEARCH_API }}"
    search-headers='{"Accept": "{{ config.DEPOSIT_SEARCH_MIMETYPE|default('application/json')}}"}'
@@ -53,6 +46,12 @@
 
 {%- block page_body %}
 <div class="container search-page">
+  <h2>test template</h2>
+  <div class="col-md-8">
+    <invenio-search-bar
+    template="template_test.html"
+    </invenio-search-bar>
+  </div>
   {%- block search_body %}
     <div class="row">
       <div class="col-md-8 col-sm-8 col-xs-8">
