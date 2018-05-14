@@ -26,7 +26,7 @@
   angular.element(document).ready(function() {
     angular.bootstrap(
       document.getElementById("invenio-records"), [
-        'invenio-records-js', 'schemaForm', 'mgcrea.ngStrap',
+        'invenioRecords', 'schemaForm', 'mgcrea.ngStrap',
         'mgcrea.ngStrap.modal', 'pascalprecht.translate', 'ui.select',
         'mgcrea.ngStrap.select', 'invenioFiles'
       ]
