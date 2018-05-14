@@ -30,8 +30,7 @@
 
 {%- block javascript %}
   {% assets "invenio_deposit_dependencies_js" %}<script src="{{ ASSET_URL }}"></script>{% endassets %}
-  <!-- {% assets "invenio_deposit_js" %}<script src="{{ ASSET_URL }}"></script>{% endassets %} -->
-  {% assets "invenio_deposit_js" %}<script src="/home/invenio/.virtualenvs/invenio/var/instance/static/node_modules/invenio-records-js/dist/invenio-records-js.js"></script>{% endassets %}
+  {% assets "invenio_deposit_js" %}<script src="{{ ASSET_URL }}"></script>{% endassets %}
 {%- endblock javascript %}
 {%- block page_body %}
 <h1>New Deposit</h1>
